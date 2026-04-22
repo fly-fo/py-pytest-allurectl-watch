@@ -1,5 +1,7 @@
 import os
+import platform
 import random
+import allure
 import pytest
 
 
@@ -17,4 +19,6 @@ def _tests_success_gate():
     mode = os.environ.get("TESTS_SUCCESS", "random")
     if mode == "broken":
         raise RuntimeError("Broken by TESTS_SUCCESS=broken")
+    os_label = os.environ.get("TESTS_OS", platform.system().lower())
+    allure.dynamic.label("os", os_label)
     yield
