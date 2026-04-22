@@ -1,914 +1,905 @@
 import allure
 import pytest
-
-
-@pytest.fixture(autouse=True)
-def setup_teardown():
-    """Fixture that runs before and after each test"""
-    # Setup: runs before each test
-    print("\nSetup: Preparing test environment")
-    yield
-    # Teardown: runs after each test
-    print("Teardown: Cleaning up test environment")
+from conftest import _should_fail
 
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 001")
+@allure.title("Assert a tuple unit 001 005")
 def test_unit_always_passing_001():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 002")
+@allure.title("Assert a tuple unit 002 005")
 def test_unit_always_passing_002():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 003")
+@allure.title("Assert a tuple unit 003 005")
 def test_unit_always_passing_003():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 004")
+@allure.title("Assert a tuple unit 004 005")
 def test_unit_always_passing_004():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 005")
+@allure.title("Assert a tuple unit 005 005")
 def test_unit_always_passing_005():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 006")
+@allure.title("Assert a tuple unit 006 005")
 def test_unit_always_passing_006():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 007")
+@allure.title("Assert a tuple unit 007 005")
 def test_unit_always_passing_007():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 008")
+@allure.title("Assert a tuple unit 008 005")
 def test_unit_always_passing_008():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 009")
+@allure.title("Assert a tuple unit 009 005")
 def test_unit_always_passing_009():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 010")
+@allure.title("Assert a tuple unit 010 005")
 def test_unit_always_passing_010():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 011")
+@allure.title("Assert a tuple unit 011 005")
 def test_unit_always_passing_011():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 012")
+@allure.title("Assert a tuple unit 012 005")
 def test_unit_always_passing_012():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 013")
+@allure.title("Assert a tuple unit 013 005")
 def test_unit_always_passing_013():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 014")
+@allure.title("Assert a tuple unit 014 005")
 def test_unit_always_passing_014():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 015")
+@allure.title("Assert a tuple unit 015 005")
 def test_unit_always_passing_015():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 016")
+@allure.title("Assert a tuple unit 016 005")
 def test_unit_always_passing_016():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 017")
+@allure.title("Assert a tuple unit 017 005")
 def test_unit_always_passing_017():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 018")
+@allure.title("Assert a tuple unit 018 005")
 def test_unit_always_passing_018():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 019")
+@allure.title("Assert a tuple unit 019 005")
 def test_unit_always_passing_019():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 020")
+@allure.title("Assert a tuple unit 020 005")
 def test_unit_always_passing_020():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 021")
+@allure.title("Assert a tuple unit 021 005")
 def test_unit_always_passing_021():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 022")
+@allure.title("Assert a tuple unit 022 005")
 def test_unit_always_passing_022():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 023")
+@allure.title("Assert a tuple unit 023 005")
 def test_unit_always_passing_023():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 024")
+@allure.title("Assert a tuple unit 024 005")
 def test_unit_always_passing_024():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 025")
+@allure.title("Assert a tuple unit 025 005")
 def test_unit_always_passing_025():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 026")
+@allure.title("Assert a tuple unit 026 005")
 def test_unit_always_passing_026():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 027")
+@allure.title("Assert a tuple unit 027 005")
 def test_unit_always_passing_027():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 028")
+@allure.title("Assert a tuple unit 028 005")
 def test_unit_always_passing_028():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 029")
+@allure.title("Assert a tuple unit 029 005")
 def test_unit_always_passing_029():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 030")
+@allure.title("Assert a tuple unit 030 005")
 def test_unit_always_passing_030():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 031")
+@allure.title("Assert a tuple unit 031 005")
 def test_unit_always_passing_031():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 032")
+@allure.title("Assert a tuple unit 032 005")
 def test_unit_always_passing_032():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 033")
+@allure.title("Assert a tuple unit 033 005")
 def test_unit_always_passing_033():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 034")
+@allure.title("Assert a tuple unit 034 005")
 def test_unit_always_passing_034():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 035")
+@allure.title("Assert a tuple unit 035 005")
 def test_unit_always_passing_035():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 036")
+@allure.title("Assert a tuple unit 036 005")
 def test_unit_always_passing_036():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 037")
+@allure.title("Assert a tuple unit 037 005")
 def test_unit_always_passing_037():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 038")
+@allure.title("Assert a tuple unit 038 005")
 def test_unit_always_passing_038():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 039")
+@allure.title("Assert a tuple unit 039 005")
 def test_unit_always_passing_039():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 040")
+@allure.title("Assert a tuple unit 040 005")
 def test_unit_always_passing_040():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 041")
+@allure.title("Assert a tuple unit 041 005")
 def test_unit_always_passing_041():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 042")
+@allure.title("Assert a tuple unit 042 005")
 def test_unit_always_passing_042():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 043")
+@allure.title("Assert a tuple unit 043 005")
 def test_unit_always_passing_043():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 044")
+@allure.title("Assert a tuple unit 044 005")
 def test_unit_always_passing_044():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 045")
+@allure.title("Assert a tuple unit 045 005")
 def test_unit_always_passing_045():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 046")
+@allure.title("Assert a tuple unit 046 005")
 def test_unit_always_passing_046():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 047")
+@allure.title("Assert a tuple unit 047 005")
 def test_unit_always_passing_047():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 048")
+@allure.title("Assert a tuple unit 048 005")
 def test_unit_always_passing_048():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 049")
+@allure.title("Assert a tuple unit 049 005")
 def test_unit_always_passing_049():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 050")
+@allure.title("Assert a tuple unit 050 005")
 def test_unit_always_passing_050():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 051")
+@allure.title("Assert a tuple unit 051 005")
 def test_unit_always_passing_051():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 052")
+@allure.title("Assert a tuple unit 052 005")
 def test_unit_always_passing_052():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 053")
+@allure.title("Assert a tuple unit 053 005")
 def test_unit_always_passing_053():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 054")
+@allure.title("Assert a tuple unit 054 005")
 def test_unit_always_passing_054():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 055")
+@allure.title("Assert a tuple unit 055 005")
 def test_unit_always_passing_055():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 056")
+@allure.title("Assert a tuple unit 056 005")
 def test_unit_always_passing_056():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 057")
+@allure.title("Assert a tuple unit 057 005")
 def test_unit_always_passing_057():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 058")
+@allure.title("Assert a tuple unit 058 005")
 def test_unit_always_passing_058():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 059")
+@allure.title("Assert a tuple unit 059 005")
 def test_unit_always_passing_059():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 060")
+@allure.title("Assert a tuple unit 060 005")
 def test_unit_always_passing_060():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 061")
+@allure.title("Assert a tuple unit 061 005")
 def test_unit_always_passing_061():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 062")
+@allure.title("Assert a tuple unit 062 005")
 def test_unit_always_passing_062():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 063")
+@allure.title("Assert a tuple unit 063 005")
 def test_unit_always_passing_063():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 064")
+@allure.title("Assert a tuple unit 064 005")
 def test_unit_always_passing_064():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 065")
+@allure.title("Assert a tuple unit 065 005")
 def test_unit_always_passing_065():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 066")
+@allure.title("Assert a tuple unit 066 005")
 def test_unit_always_passing_066():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 067")
+@allure.title("Assert a tuple unit 067 005")
 def test_unit_always_passing_067():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 068")
+@allure.title("Assert a tuple unit 068 005")
 def test_unit_always_passing_068():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 069")
+@allure.title("Assert a tuple unit 069 005")
 def test_unit_always_passing_069():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 070")
+@allure.title("Assert a tuple unit 070 005")
 def test_unit_always_passing_070():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 071")
+@allure.title("Assert a tuple unit 071 005")
 def test_unit_always_passing_071():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 072")
+@allure.title("Assert a tuple unit 072 005")
 def test_unit_always_passing_072():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 073")
+@allure.title("Assert a tuple unit 073 005")
 def test_unit_always_passing_073():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 074")
+@allure.title("Assert a tuple unit 074 005")
 def test_unit_always_passing_074():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 075")
+@allure.title("Assert a tuple unit 075 005")
 def test_unit_always_passing_075():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 076")
+@allure.title("Assert a tuple unit 076 005")
 def test_unit_always_passing_076():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 077")
+@allure.title("Assert a tuple unit 077 005")
 def test_unit_always_passing_077():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 078")
+@allure.title("Assert a tuple unit 078 005")
 def test_unit_always_passing_078():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 079")
+@allure.title("Assert a tuple unit 079 005")
 def test_unit_always_passing_079():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 080")
+@allure.title("Assert a tuple unit 080 005")
 def test_unit_always_passing_080():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 081")
+@allure.title("Assert a tuple unit 081 005")
 def test_unit_always_passing_081():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 082")
+@allure.title("Assert a tuple unit 082 005")
 def test_unit_always_passing_082():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 083")
+@allure.title("Assert a tuple unit 083 005")
 def test_unit_always_passing_083():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 084")
+@allure.title("Assert a tuple unit 084 005")
 def test_unit_always_passing_084():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 085")
+@allure.title("Assert a tuple unit 085 005")
 def test_unit_always_passing_085():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 086")
+@allure.title("Assert a tuple unit 086 005")
 def test_unit_always_passing_086():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 087")
+@allure.title("Assert a tuple unit 087 005")
 def test_unit_always_passing_087():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 088")
+@allure.title("Assert a tuple unit 088 005")
 def test_unit_always_passing_088():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 089")
+@allure.title("Assert a tuple unit 089 005")
 def test_unit_always_passing_089():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 090")
+@allure.title("Assert a tuple unit 090 005")
 def test_unit_always_passing_090():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 091")
+@allure.title("Assert a tuple unit 091 005")
 def test_unit_always_passing_091():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 092")
+@allure.title("Assert a tuple unit 092 005")
 def test_unit_always_passing_092():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 093")
+@allure.title("Assert a tuple unit 093 005")
 def test_unit_always_passing_093():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 094")
+@allure.title("Assert a tuple unit 094 005")
 def test_unit_always_passing_094():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 095")
+@allure.title("Assert a tuple unit 095 005")
 def test_unit_always_passing_095():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 096")
+@allure.title("Assert a tuple unit 096 005")
 def test_unit_always_passing_096():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 097")
+@allure.title("Assert a tuple unit 097 005")
 def test_unit_always_passing_097():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 098")
+@allure.title("Assert a tuple unit 098 005")
 def test_unit_always_passing_098():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 099")
+@allure.title("Assert a tuple unit 099 005")
 def test_unit_always_passing_099():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
-@allure.title("Assert a tuple 100")
+@allure.title("Assert a tuple unit 100 005")
 def test_unit_always_passing_100():
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert not _should_fail(), "Failure due to reason ODD"
 

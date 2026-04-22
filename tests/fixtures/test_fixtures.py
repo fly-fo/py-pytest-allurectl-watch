@@ -1,5 +1,6 @@
 import allure
 import pytest
+from conftest import _should_fail
 
 @allure.title("Fixture title")
 @pytest.fixture

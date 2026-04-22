@@ -4,6 +4,7 @@ import random
 
 import allure
 from allure import attachment_type
+from conftest import _should_fail
 
 
 @allure.feature("Sending medium attachments")

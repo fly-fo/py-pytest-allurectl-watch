@@ -19,6 +19,6 @@ export ALLURE_LAUNCH_TAGS="pytest, allure3, ${COMMAND_USED}"
 rm -rf ${ALLURE_RESULTS}
 rm history.jsonl
 
-sleep 3
+sleep 2
 
-pnpm allure ${COMMAND_USED} --config=./allurerc.mjs -- pytest tests/poco --alluredir=${ALLURE_RESULTS}
+pnpm allure ${COMMAND_USED} --config=./allurerc.mjs -- pytest tests --alluredir=${ALLURE_RESULTS}

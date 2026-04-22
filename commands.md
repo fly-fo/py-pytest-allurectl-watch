@@ -6,7 +6,5 @@ never	all tests are  (FAILED)
 broken	fixture throws exception (BROKEN)
 random  or not set – 10-20% probability of failure in asserts
 
-
-
 export TESTS_SUCCESS=random; ./runallure3.sh
-export TESTS_SUCCESS=random; ./runtests.sh 
+export TESTS_SUCCESS=random; ./runtests.sh

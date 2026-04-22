@@ -1,33 +1,14 @@
 import allure
-import os
-import random
-import pytest
+from conftest import _should_fail
 
 
-def _should_fail() -> bool:
-    mode = os.environ.get("TESTS_SUCCESS", "random")
-    if mode == "always":
-        return False
-    if mode == "never":
-        return True
-    # random: 20% chance to fail
-    return random.random() < 0.1
 
-
-@pytest.fixture(autouse=True)
-def setup_teardown():
-    mode = os.environ.get("TESTS_SUCCESS", "random")
-    if mode == "broken":
-        raise RuntimeError("Broken by TESTS_SUCCESS=broken")
-    print("\nSetup: Preparing test environment")
-    yield
-    print("Teardown: Cleaning up test environment")
 
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 001 and it will fail")
+@allure.title("Assert a tuple poco 001 001")
 def test_unit_always_passing_001():
     with allure.step("Assert 123 versus 223"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -35,7 +16,7 @@ def test_unit_always_passing_001():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 002")
+@allure.title("Assert a tuple poco 002 001")
 def test_unit_always_passing_002():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -45,7 +26,7 @@ def test_unit_always_passing_002():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 003")
+@allure.title("Assert a tuple poco 003 001")
 def test_unit_always_passing_003():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -55,7 +36,7 @@ def test_unit_always_passing_003():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 004")
+@allure.title("Assert a tuple poco 004 001")
 def test_unit_always_passing_004():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -65,7 +46,7 @@ def test_unit_always_passing_004():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 005")
+@allure.title("Assert a tuple poco 005 001")
 def test_unit_always_passing_005():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -75,7 +56,7 @@ def test_unit_always_passing_005():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 006")
+@allure.title("Assert a tuple poco 006 001")
 def test_unit_always_passing_006():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -85,7 +66,7 @@ def test_unit_always_passing_006():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 007")
+@allure.title("Assert a tuple poco 007 001")
 def test_unit_always_passing_007():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -95,7 +76,7 @@ def test_unit_always_passing_007():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 008")
+@allure.title("Assert a tuple poco 008 001")
 def test_unit_always_passing_008():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -105,7 +86,7 @@ def test_unit_always_passing_008():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 009")
+@allure.title("Assert a tuple poco 009 001")
 def test_unit_always_passing_009():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -115,7 +96,7 @@ def test_unit_always_passing_009():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 010")
+@allure.title("Assert a tuple poco 010 001")
 def test_unit_always_passing_010():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -125,7 +106,7 @@ def test_unit_always_passing_010():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 011")
+@allure.title("Assert a tuple poco 011 001")
 def test_unit_always_passing_011():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -135,7 +116,7 @@ def test_unit_always_passing_011():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 012")
+@allure.title("Assert a tuple poco 012 001")
 def test_unit_always_passing_012():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -145,7 +126,7 @@ def test_unit_always_passing_012():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 013")
+@allure.title("Assert a tuple poco 013 001")
 def test_unit_always_passing_013():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -155,7 +136,7 @@ def test_unit_always_passing_013():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 014")
+@allure.title("Assert a tuple poco 014 001")
 def test_unit_always_passing_014():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -165,7 +146,7 @@ def test_unit_always_passing_014():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 015")
+@allure.title("Assert a tuple poco 015 001")
 def test_unit_always_passing_015():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -175,7 +156,7 @@ def test_unit_always_passing_015():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 016")
+@allure.title("Assert a tuple poco 016 001")
 def test_unit_always_passing_016():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -185,7 +166,7 @@ def test_unit_always_passing_016():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 017")
+@allure.title("Assert a tuple poco 017 001")
 def test_unit_always_passing_017():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -195,7 +176,7 @@ def test_unit_always_passing_017():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 018")
+@allure.title("Assert a tuple poco 018 001")
 def test_unit_always_passing_018():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -205,7 +186,7 @@ def test_unit_always_passing_018():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 019")
+@allure.title("Assert a tuple poco 019 001")
 def test_unit_always_passing_019():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -215,7 +196,7 @@ def test_unit_always_passing_019():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 020")
+@allure.title("Assert a tuple poco 020 001")
 def test_unit_always_passing_020():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -225,7 +206,7 @@ def test_unit_always_passing_020():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 021")
+@allure.title("Assert a tuple poco 021 001")
 def test_unit_always_passing_021():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -235,7 +216,7 @@ def test_unit_always_passing_021():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 022")
+@allure.title("Assert a tuple poco 022 001")
 def test_unit_always_passing_022():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -245,7 +226,7 @@ def test_unit_always_passing_022():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 023")
+@allure.title("Assert a tuple poco 023 001")
 def test_unit_always_passing_023():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -255,7 +236,7 @@ def test_unit_always_passing_023():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 024")
+@allure.title("Assert a tuple poco 024 001")
 def test_unit_always_passing_024():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -265,7 +246,7 @@ def test_unit_always_passing_024():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 025")
+@allure.title("Assert a tuple poco 025 001")
 def test_unit_always_passing_025():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -275,7 +256,7 @@ def test_unit_always_passing_025():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 026")
+@allure.title("Assert a tuple poco 026 001")
 def test_unit_always_passing_026():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -285,7 +266,7 @@ def test_unit_always_passing_026():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 027")
+@allure.title("Assert a tuple poco 027 001")
 def test_unit_always_passing_027():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -295,7 +276,7 @@ def test_unit_always_passing_027():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 028")
+@allure.title("Assert a tuple poco 028 001")
 def test_unit_always_passing_028():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -305,7 +286,7 @@ def test_unit_always_passing_028():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 029")
+@allure.title("Assert a tuple poco 029 001")
 def test_unit_always_passing_029():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -315,7 +296,7 @@ def test_unit_always_passing_029():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 030")
+@allure.title("Assert a tuple poco 030 001")
 def test_unit_always_passing_030():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -325,7 +306,7 @@ def test_unit_always_passing_030():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 031")
+@allure.title("Assert a tuple poco 031 001")
 def test_unit_always_passing_031():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -335,7 +316,7 @@ def test_unit_always_passing_031():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 032")
+@allure.title("Assert a tuple poco 032 001")
 def test_unit_always_passing_032():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -345,7 +326,7 @@ def test_unit_always_passing_032():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 033")
+@allure.title("Assert a tuple poco 033 001")
 def test_unit_always_passing_033():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -355,7 +336,7 @@ def test_unit_always_passing_033():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 034")
+@allure.title("Assert a tuple poco 034 001")
 def test_unit_always_passing_034():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -365,7 +346,7 @@ def test_unit_always_passing_034():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 035")
+@allure.title("Assert a tuple poco 035 001")
 def test_unit_always_passing_035():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -375,7 +356,7 @@ def test_unit_always_passing_035():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 036")
+@allure.title("Assert a tuple poco 036 001")
 def test_unit_always_passing_036():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -385,7 +366,7 @@ def test_unit_always_passing_036():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 037")
+@allure.title("Assert a tuple poco 037 001")
 def test_unit_always_passing_037():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -395,7 +376,7 @@ def test_unit_always_passing_037():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 038")
+@allure.title("Assert a tuple poco 038 001")
 def test_unit_always_passing_038():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -405,7 +386,7 @@ def test_unit_always_passing_038():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 039")
+@allure.title("Assert a tuple poco 039 001")
 def test_unit_always_passing_039():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -415,7 +396,7 @@ def test_unit_always_passing_039():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 040")
+@allure.title("Assert a tuple poco 040 001")
 def test_unit_always_passing_040():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -425,7 +406,7 @@ def test_unit_always_passing_040():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 041")
+@allure.title("Assert a tuple poco 041 001")
 def test_unit_always_passing_041():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -435,7 +416,7 @@ def test_unit_always_passing_041():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 042")
+@allure.title("Assert a tuple poco 042 001")
 def test_unit_always_passing_042():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -445,7 +426,7 @@ def test_unit_always_passing_042():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 043")
+@allure.title("Assert a tuple poco 043 001")
 def test_unit_always_passing_043():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -455,7 +436,7 @@ def test_unit_always_passing_043():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 044")
+@allure.title("Assert a tuple poco 044 001")
 def test_unit_always_passing_044():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -465,7 +446,7 @@ def test_unit_always_passing_044():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 045")
+@allure.title("Assert a tuple poco 045 001")
 def test_unit_always_passing_045():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -475,7 +456,7 @@ def test_unit_always_passing_045():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 046")
+@allure.title("Assert a tuple poco 046 001")
 def test_unit_always_passing_046():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -485,7 +466,7 @@ def test_unit_always_passing_046():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 047")
+@allure.title("Assert a tuple poco 047 001")
 def test_unit_always_passing_047():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -495,7 +476,7 @@ def test_unit_always_passing_047():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 048")
+@allure.title("Assert a tuple poco 048 001")
 def test_unit_always_passing_048():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -505,7 +486,7 @@ def test_unit_always_passing_048():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 049")
+@allure.title("Assert a tuple poco 049 001")
 def test_unit_always_passing_049():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -515,7 +496,7 @@ def test_unit_always_passing_049():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 050")
+@allure.title("Assert a tuple poco 050 001")
 def test_unit_always_passing_050():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -525,7 +506,7 @@ def test_unit_always_passing_050():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 051")
+@allure.title("Assert a tuple poco 051 001")
 def test_unit_always_passing_051():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -535,7 +516,7 @@ def test_unit_always_passing_051():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 052")
+@allure.title("Assert a tuple poco 052 001")
 def test_unit_always_passing_052():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -545,7 +526,7 @@ def test_unit_always_passing_052():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 053")
+@allure.title("Assert a tuple poco 053 001")
 def test_unit_always_passing_053():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -555,7 +536,7 @@ def test_unit_always_passing_053():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 054")
+@allure.title("Assert a tuple poco 054 001")
 def test_unit_always_passing_054():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -565,7 +546,7 @@ def test_unit_always_passing_054():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 055")
+@allure.title("Assert a tuple poco 055 001")
 def test_unit_always_passing_055():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -575,7 +556,7 @@ def test_unit_always_passing_055():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 056")
+@allure.title("Assert a tuple poco 056 001")
 def test_unit_always_passing_056():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -585,7 +566,7 @@ def test_unit_always_passing_056():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 057")
+@allure.title("Assert a tuple poco 057 001")
 def test_unit_always_passing_057():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -595,7 +576,7 @@ def test_unit_always_passing_057():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 058")
+@allure.title("Assert a tuple poco 058 001")
 def test_unit_always_passing_058():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -605,7 +586,7 @@ def test_unit_always_passing_058():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 059")
+@allure.title("Assert a tuple poco 059 001")
 def test_unit_always_passing_059():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -615,7 +596,7 @@ def test_unit_always_passing_059():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 060")
+@allure.title("Assert a tuple poco 060 001")
 def test_unit_always_passing_060():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -625,7 +606,7 @@ def test_unit_always_passing_060():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 061")
+@allure.title("Assert a tuple poco 061 001")
 def test_unit_always_passing_061():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -635,7 +616,7 @@ def test_unit_always_passing_061():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 062")
+@allure.title("Assert a tuple poco 062 001")
 def test_unit_always_passing_062():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -645,7 +626,7 @@ def test_unit_always_passing_062():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 063")
+@allure.title("Assert a tuple poco 063 001")
 def test_unit_always_passing_063():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -655,7 +636,7 @@ def test_unit_always_passing_063():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 064")
+@allure.title("Assert a tuple poco 064 001")
 def test_unit_always_passing_064():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -665,7 +646,7 @@ def test_unit_always_passing_064():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 065")
+@allure.title("Assert a tuple poco 065 001")
 def test_unit_always_passing_065():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -675,7 +656,7 @@ def test_unit_always_passing_065():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 066")
+@allure.title("Assert a tuple poco 066 001")
 def test_unit_always_passing_066():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -685,7 +666,7 @@ def test_unit_always_passing_066():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 067")
+@allure.title("Assert a tuple poco 067 001")
 def test_unit_always_passing_067():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -695,7 +676,7 @@ def test_unit_always_passing_067():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 068")
+@allure.title("Assert a tuple poco 068 001")
 def test_unit_always_passing_068():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -705,7 +686,7 @@ def test_unit_always_passing_068():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 069")
+@allure.title("Assert a tuple poco 069 001")
 def test_unit_always_passing_069():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -715,7 +696,7 @@ def test_unit_always_passing_069():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 070")
+@allure.title("Assert a tuple poco 070 001")
 def test_unit_always_passing_070():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -725,7 +706,7 @@ def test_unit_always_passing_070():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 071")
+@allure.title("Assert a tuple poco 071 001")
 def test_unit_always_passing_071():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -735,7 +716,7 @@ def test_unit_always_passing_071():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 072")
+@allure.title("Assert a tuple poco 072 001")
 def test_unit_always_passing_072():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -745,7 +726,7 @@ def test_unit_always_passing_072():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 073")
+@allure.title("Assert a tuple poco 073 001")
 def test_unit_always_passing_073():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -755,7 +736,7 @@ def test_unit_always_passing_073():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 074")
+@allure.title("Assert a tuple poco 074 001")
 def test_unit_always_passing_074():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -765,7 +746,7 @@ def test_unit_always_passing_074():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 075")
+@allure.title("Assert a tuple poco 075 001")
 def test_unit_always_passing_075():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -775,7 +756,7 @@ def test_unit_always_passing_075():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 076")
+@allure.title("Assert a tuple poco 076 001")
 def test_unit_always_passing_076():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -785,7 +766,7 @@ def test_unit_always_passing_076():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 077")
+@allure.title("Assert a tuple poco 077 001")
 def test_unit_always_passing_077():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -795,7 +776,7 @@ def test_unit_always_passing_077():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 078")
+@allure.title("Assert a tuple poco 078 001")
 def test_unit_always_passing_078():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -805,7 +786,7 @@ def test_unit_always_passing_078():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 079")
+@allure.title("Assert a tuple poco 079 001")
 def test_unit_always_passing_079():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -815,7 +796,7 @@ def test_unit_always_passing_079():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 080")
+@allure.title("Assert a tuple poco 080 001")
 def test_unit_always_passing_080():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -825,7 +806,7 @@ def test_unit_always_passing_080():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 081")
+@allure.title("Assert a tuple poco 081 001")
 def test_unit_always_passing_081():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -835,7 +816,7 @@ def test_unit_always_passing_081():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 082")
+@allure.title("Assert a tuple poco 082 001")
 def test_unit_always_passing_082():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -845,7 +826,7 @@ def test_unit_always_passing_082():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 083")
+@allure.title("Assert a tuple poco 083 001")
 def test_unit_always_passing_083():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -855,7 +836,7 @@ def test_unit_always_passing_083():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 084")
+@allure.title("Assert a tuple poco 084 001")
 def test_unit_always_passing_084():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -865,7 +846,7 @@ def test_unit_always_passing_084():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 085")
+@allure.title("Assert a tuple poco 085 001")
 def test_unit_always_passing_085():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -875,7 +856,7 @@ def test_unit_always_passing_085():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 086")
+@allure.title("Assert a tuple poco 086 001")
 def test_unit_always_passing_086():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -885,7 +866,7 @@ def test_unit_always_passing_086():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 087")
+@allure.title("Assert a tuple poco 087 001")
 def test_unit_always_passing_087():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -895,7 +876,7 @@ def test_unit_always_passing_087():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 088")
+@allure.title("Assert a tuple poco 088 001")
 def test_unit_always_passing_088():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -905,7 +886,7 @@ def test_unit_always_passing_088():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 089")
+@allure.title("Assert a tuple poco 089 001")
 def test_unit_always_passing_089():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -915,7 +896,7 @@ def test_unit_always_passing_089():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 090")
+@allure.title("Assert a tuple poco 090 001")
 def test_unit_always_passing_090():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -925,7 +906,7 @@ def test_unit_always_passing_090():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 091")
+@allure.title("Assert a tuple poco 091 001")
 def test_unit_always_passing_091():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -935,7 +916,7 @@ def test_unit_always_passing_091():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 092")
+@allure.title("Assert a tuple poco 092 001")
 def test_unit_always_passing_092():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -945,7 +926,7 @@ def test_unit_always_passing_092():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 093")
+@allure.title("Assert a tuple poco 093 001")
 def test_unit_always_passing_093():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -955,7 +936,7 @@ def test_unit_always_passing_093():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 094")
+@allure.title("Assert a tuple poco 094 001")
 def test_unit_always_passing_094():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -965,7 +946,7 @@ def test_unit_always_passing_094():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 095")
+@allure.title("Assert a tuple poco 095 001")
 def test_unit_always_passing_095():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -975,7 +956,7 @@ def test_unit_always_passing_095():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 096")
+@allure.title("Assert a tuple poco 096 001")
 def test_unit_always_passing_096():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -985,7 +966,7 @@ def test_unit_always_passing_096():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 097")
+@allure.title("Assert a tuple poco 097 001")
 def test_unit_always_passing_097():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -995,7 +976,7 @@ def test_unit_always_passing_097():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 098")
+@allure.title("Assert a tuple poco 098 001")
 def test_unit_always_passing_098():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -1005,7 +986,7 @@ def test_unit_always_passing_098():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","unit")
-@allure.title("Assert a tuple 099")
+@allure.title("Assert a tuple poco 099 001")
 def test_unit_always_passing_099():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
@@ -1015,7 +996,7 @@ def test_unit_always_passing_099():
 @allure.feature("test results processing")
 @allure.story("many unit tests")
 @allure.label("layer","e2e")
-@allure.title("Assert a tuple 100")
+@allure.title("Assert a tuple poco 100 001")
 def test_unit_always_passing_100():
     with allure.step("Assert 123 versus 123"):
         assert not _should_fail(), "Failure due to reason ODD"
