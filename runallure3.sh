@@ -26,4 +26,4 @@ START=$(date +%s)
 pnpm allure ${COMMAND_USED} --config=./qg.mjs -- pytest tests/poco --alluredir=${ALLURE_RESULTS}
 END=$(date +%s)
 DURATION=$((END - START))
-echo "Время выполнения: $DURATION секунд"
+echo "Running time: $DURATION seconds"
