@@ -1,5 +1,10 @@
-TESTS_SUCCESS	Поведение
-always	все тесты проходят
-never	все тесты падают (FAILED)
-broken	фикстура бросает исключение (BROKEN)
-random / не задана	20% шанс падения каждого assert
+TESTS_SUCCESS	behaviour
+always	all tests are passing
+never	all tests are  (FAILED)
+broken	fixture throws exception (BROKEN)
+random  or not set – 10-20% probability of failure in asserts
+
+
+
+export TESTS_SUCCESS=random; ./runallure3.sh
+export TESTS_SUCCESS=random; ./runtests.sh 
