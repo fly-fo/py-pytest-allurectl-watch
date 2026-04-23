@@ -8,4 +8,7 @@ random  or not set – 10-20% probability of failure in asserts
 
 export TESTS_SUCCESS=random; ./runallure3.sh
 export TESTS_SUCCESS=always; ./runallure3.sh
+export TESTS_SUCCESS=broken; ./runallure3.sh
+export TESTS_SUCCESS=always; ./runtests.sh
 export TESTS_SUCCESS=random; ./runtests.sh
+export TESTS_SUCCESS=broken; ./runtests.sh
