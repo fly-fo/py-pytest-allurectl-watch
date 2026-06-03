@@ -14,10 +14,12 @@ on:
         required: true
         type: choice
         options:
-          - unit-many
-          - unit
-          - attachments
-          - fixtures
+          - tests/poco
+          - tests/unit-many
+          - tests/unit
+          - tests/attachments
+          - tests/fixtures
+          - tests
         default: unit-many
       PYTEST_THREADS:
         description: "How many threads, sire?"
@@ -54,7 +56,7 @@ jobs:
           if [ "${{ matrix.THREADS }}" != "ONE" ]; then
             sleep 2
           fi
-          allurectl watch -- pytest tests/${{ inputs.TESTS_TYPE }} -n ${{ inputs.PYTEST_THREADS }} --alluredir=allure-results
+          allurectl watch -- pytest ${{ inputs.TESTS_TYPE }} -n ${{ inputs.PYTEST_THREADS }} --alluredir=allure-results
         env:
           ALLURE_RESULTS: "allure-results"
           ALLURE_JOB_RUN_ID: ${{ github.event.inputs.ALLURE_JOB_RUN_ID }}
