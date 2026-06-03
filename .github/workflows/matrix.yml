@@ -3,12 +3,6 @@ name: matrix
 on:
   workflow_dispatch:
     inputs:
-      ALLURE_JOB_RUN_ID:
-        description: "ALLURE_JOB_RUN_ID service parameter. Leave blank."
-        required: false
-      ALLURE_USERNAME:
-        description: "ALLURE_USERNAME service parameter. Leave blank"
-        required: false
       TESTS_TYPE:
         description: "Select type of tests"
         required: true
@@ -25,6 +19,12 @@ on:
         description: "How many threads, sire?"
         required: true
         default: 1
+      ALLURE_JOB_RUN_ID:
+        description: "ALLURE_JOB_RUN_ID service parameter. Leave blank."
+        required: false
+      ALLURE_USERNAME:
+        description: "ALLURE_USERNAME service parameter. Leave blank"
+        required: false
 env:
   ALLURE_RESULTS: "allure-results"
   ALLURE_JOB_RUN_ID: ${{ github.event.inputs.ALLURE_JOB_RUN_ID }}
