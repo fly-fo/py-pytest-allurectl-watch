@@ -35,7 +35,7 @@ jobs:
       matrix:
         THREADS: [ONE, TWO, THREE, FOUR]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10'
@@ -44,7 +44,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest pytest-xdist allure-pytest 
       - name: install and configure allurectl
-        uses: allure-framework/setup-allurectl@v1
+        uses: allure-framework/setup-allurectl@v1.0.3
         with:
           allure-endpoint: ${{ secrets.ALLURE_ENDPOINT_TESTING }}
           allure-token: ${{ secrets.ALLURE_TOKEN_TESTING }}
