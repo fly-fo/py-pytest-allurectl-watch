@@ -72,6 +72,7 @@ export default defineConfig({
   categories: {
     rules: comboRules,
   },
+  plugins: {
   awesomeAll: {
       import: "@allurereport/plugin-awesome",
       options: {
