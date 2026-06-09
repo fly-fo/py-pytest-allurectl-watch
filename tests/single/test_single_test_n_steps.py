@@ -4,7 +4,7 @@ from conftest import _should_fail
 
 
 @allure.feature("test results processing")
-@allure.story("many unit tests")
+@allure.story("single api test")
 @allure.title("Assert a tuple 001 and it will fail")
 def test_unit_always_passing_001():
     with allure.step("Start stuff"):
