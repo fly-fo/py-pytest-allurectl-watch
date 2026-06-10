@@ -1,18 +1,24 @@
 import allure
 from conftest import _should_fail
 
-
-
-
-
 @allure.feature("test results processing")
 @allure.story("un poco de unit tests")
 @allure.label("layer","api")
 @allure.label("os","linux")
 @allure.title("Assert a tuple poco 001 001")
 def test_unit_always_passing_001():
+    with allure.step("Arrange some stuff before we get crakin'"):
+        pass
+    with allure.step("Arrange some more stuff before we get crakin'"):
+        assert not _should_fail(), "Failure due to reason EVEN"
+        with allure.step("Arrange some more substep stuff before we get crakin'"):
+            assert not _should_fail(), "Failure due to reason ODD"
+    with allure.step("Assert 123 versus 223"):
+        assert not _should_fail(), "Failure due to reason EVEN"
     with allure.step("Assert 123 versus 223"):
         assert not _should_fail(), "Failure due to reason ODD"
+        with allure.step("Assert 123 versus 223"):
+            assert not _should_fail(), "Failure due to reason ODD"
 
 @allure.feature("test results processing")
 @allure.story("un poco de unit tests")
