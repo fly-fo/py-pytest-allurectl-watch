@@ -16,3 +16,7 @@ def _should_fail() -> bool:
 # @pytest.fixture(autouse=True)
 # def _layer():
 #     allure.dynamic.label("layer", "api")
+
+@pytest.fixture(autouse=True)
+def _owner():
+    allure.dynamic.label("owner", "bugsbunny")
