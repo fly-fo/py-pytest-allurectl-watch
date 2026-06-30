@@ -45,7 +45,7 @@ steps:
     ALLURE_RESULTS: $(ALLURE_RESULTS)
     ALLURE_LAUNCH_NAME: "$(Build.DefinitionName)-$(Build.BuildNumber)"
     TEST_BRANCH: $(Build.SourceBranchName)
-    ALLURE_LAUNCH_TAGS: "$(Build.SourceBranchName), azure"
+    ALLURE_LAUNCH_TAGS: "$(env | cut -d= -f1)"
     AZURE_BROWSER: $(AZURE_BROWSER)
     AZURE_HOST: $(AZURE_HOST)
     TESTS_SUCCESS: $(TESTS_SUCCESS)
