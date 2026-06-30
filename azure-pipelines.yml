@@ -37,7 +37,6 @@ steps:
     printenv | grep "AZURE_"
     echo "All variables"
     printenv
-
   displayName: 'running pytest tests'
   env:
     ALLURE_ENDPOINT: https://demo.testops.cloud
