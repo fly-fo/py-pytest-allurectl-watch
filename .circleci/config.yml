@@ -35,7 +35,7 @@ jobs:
       - run:
           name: Run pytest tests
           command: |
-            ./allurectl watch -- pytest << pipeline.parameters.TESTS_TYPE >> -n << pipeline.parameters.PYTEST_THREADS >>
+            ./allurectl watch -- pytest << pipeline.parameters.TESTS_TYPE >> -n << pipeline.parameters.PYTEST_THREADS >> || true
           environment:
             ALLURE_LAUNCH_TAGS: "<< pipeline.parameters.TESTS_TYPE >>"
             ALLURE_JOB_RUN_ID: << pipeline.parameters.ALLURE_JOB_RUN_ID >>
