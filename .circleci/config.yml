@@ -42,7 +42,7 @@ jobs:
             ALLURE_USERNAME: << pipeline.parameters.ALLURE_USERNAME >>
             ALLURE_RESULTS: "allure-results"
             ALLURE_TOKEN: $ALLURE_TOKEN_GOGI
-            ALLURE_ENDPOINT: $ALLURE_ENDPOINT_GOGI
+            ALLURE_ENDPOINT: https://egor.qameta.in
             ALLURE_PROJECT_ID: "25"
 
 workflows:
