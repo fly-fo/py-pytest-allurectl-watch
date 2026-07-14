@@ -45,7 +45,7 @@ jobs:
           name: Run pytest tests
           environment:
             ALLURE_ENDPOINT: "https://demo.testops.cloud"
-            ALLURE_PROJECT_ID: "4601"
+            ALLURE_PROJECT_ID: "4535"
             ALLURE_RESULTS: "allure-results"
             ALLURE_LAUNCH_NAME: "CircleCI demo"
             ALLURE_LAUNCH_TAGS: "circleci,<< pipeline.parameters.TESTS_TYPE >>"
