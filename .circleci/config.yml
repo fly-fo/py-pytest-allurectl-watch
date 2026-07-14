@@ -41,8 +41,8 @@ jobs:
             ALLURE_JOB_RUN_ID: << pipeline.parameters.ALLURE_JOB_RUN_ID >>
             ALLURE_USERNAME: << pipeline.parameters.ALLURE_USERNAME >>
             ALLURE_RESULTS: "allure-results"
-            ALLURE_ENDPOINT: https://egor.qameta.in
-            ALLURE_PROJECT_ID: "25"
+            ALLURE_ENDPOINT: https://demo.testops.cloud/
+            ALLURE_PROJECT_ID: "4601"
 
 workflows:
   run:
