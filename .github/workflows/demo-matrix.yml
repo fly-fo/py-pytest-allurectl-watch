@@ -50,7 +50,7 @@ jobs:
         with:
           allure-endpoint: https://demo.testops.cloud/
           allure-token: ${{ secrets.ALLURE_TOKEN_DEMO }}
-          allure-project-id: 4535
+          allure-project-id: 4601
       - name: Run pytest tests
         run: |
           if [ "${{ matrix.THREADS }}" != "ONE" ]; then
